@@ -1,0 +1,5 @@
+
+rootProject.name = "TG Loader"
+include ':app'
+//include ':MundoCore'
+
