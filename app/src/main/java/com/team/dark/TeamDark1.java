@@ -160,7 +160,7 @@ public class TeamDark1 extends Application {
         super.onCreate();
         BlackBoxCore.get().doCreate();
         try {
-            MetaActivationManager.activateSdk("SDK-6F009FE2EFBD84493615CE7B");
+            MetaActivationManager.activateSdk("FLAKER-PAPA");
         } catch (Exception exception) {
             exception.printStackTrace();
         }
