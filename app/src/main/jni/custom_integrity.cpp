@@ -29,7 +29,8 @@ static std::string baseName(const std::string &path) {
 
 static bool isAllowedPackagedLibName(const std::string &name) {
     return name == std::string(oxorany("libTeamDarkLoader.so"))
-        || name == std::string(oxorany("libTeamDarkCore.so"));
+        || name == std::string(oxorany("libTeamDarkCore.so"))
+        || name == std::string(oxorany("libParallaxCore.so"));
 }
 
 static bool isAllowedSdkStoredArtifact(const std::string &name) {
@@ -150,7 +151,8 @@ static bool verifyNativeDirectory(const std::string &dirPath) {
         }
 
         if (name == std::string(oxorany("libTeamDarkLoader.so"))) foundLoader = true;
-        if (name == std::string(oxorany("libTeamDarkCore.so"))) foundCore = true;
+        if (name == std::string(oxorany("libTeamDarkCore.so"))
+                || name == std::string(oxorany("libParallaxCore.so"))) foundCore = true;
     }
 
     closedir(dir);
